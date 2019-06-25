@@ -10,9 +10,8 @@ function increaseRankBy(n){
   let ranked = document.querySelectorAll('.ranked-list > li');
   for (let i = 0; i < ranked.length; i++){
     let current = ranked[i];
-    parseInt(current.innerHTML) + n;
+    current.innerHTML = parseInt(current.innerHTML) + n;
   }
-  return ranked;
 }
 
 function deepestChild(){
